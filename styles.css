@@ -39,8 +39,8 @@ body::before {
 .logo {
     display:block;
     height: 200px;
+    width: auto; /* Add this line to maintain aspect ratio */
 }
-
 
 .social-media {
     display:flex;
@@ -74,4 +74,24 @@ body::before {
 
 .coming-soon-btn:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add media queries for mobile */
+
+@media (max-width: 768px) {
+    .logo {
+        height: 100px; /* Reduce logo size for mobile */
+    }
+    .banner {
+        height: calc(100vh - 30px); /* Adjust banner height for mobile */
+    }
+    .social-media {
+        height: 40px; /* Adjust social media footer height for mobile */
+    }
+    .social-media img {
+        height: 20px; /* Reduce social media icon size for mobile */
+    }
+    .coming-soon-btn {
+        margin: 30px auto; /* Adjust button margin for mobile */
+    }
 }

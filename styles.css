@@ -26,7 +26,7 @@ body::before {
     background-image: url('Images/WebsiteBG.png');
     background-size: cover;
     background-position: center;
-    height: calc(105vh);
+    height: calc(100vh + 30px);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -190,7 +190,7 @@ h2{
         height: 125px; /* Reduce logo size for mobile */
     }
     .banner {
-        height: calc(105vh); /* Adjust banner height for mobile */
+        height: calc(100vh + 30px); /* Adjust banner height for mobile */
     }
     .social-media {
         height: 40px; /* Adjust social media footer height for mobile */

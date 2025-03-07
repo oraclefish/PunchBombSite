@@ -24,6 +24,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+    position: relative; /* add this */
 }
 
 .logo {
@@ -67,4 +68,13 @@ li {
     margin-bottom: 10px;
     margin-left:20px;
     margin-right:20px;
+}
+
+.back-home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-decoration: none;
+    color: #fff; /* adjust color as needed */
+    font-size: 18px; /* adjust font size as needed */
 }

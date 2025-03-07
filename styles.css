@@ -26,13 +26,13 @@ body::before {
     background-image: url('Images/WebsiteBG.png');
     background-size: cover;
     background-position: center;
-    height: calc(100vh);
+    height: calc(105vh);
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     text-align:center;
 }
 
@@ -70,7 +70,7 @@ body::before {
     border-radius: 20px; /* Rounded corners */
     cursor: pointer;
     display:block;
-    margin:60px auto;
+    margin:50px auto 0px auto;
 }
 
 .coming-soon-btn:hover {
@@ -173,8 +173,6 @@ body::before {
     filter:brightness(0.2);
 }
 
-/* Add media queries for mobile */
-
 h2{
     font-family: "wigwag-bold", sans-serif;
     font-weight: 400;
@@ -182,15 +180,17 @@ h2{
     font-size:50px;
     margin-top:0px;
     padding:0px;
-    margin-bottom:0px;
+    margin-bottom:10px;
 }
+
+/* Add media queries for mobile */
 
 @media (max-width: 768px) {
     .logo {
-        height: 100px; /* Reduce logo size for mobile */
+        height: 125px; /* Reduce logo size for mobile */
     }
     .banner {
-        height: calc(100vh); /* Adjust banner height for mobile */
+        height: calc(105vh); /* Adjust banner height for mobile */
     }
     .social-media {
         height: 40px; /* Adjust social media footer height for mobile */

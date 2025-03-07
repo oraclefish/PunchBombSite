@@ -26,7 +26,7 @@ body::before {
     background-image: url('Images/WebsiteBG.png');
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 50px);
+    height: calc(100vh);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -76,7 +76,92 @@ body::before {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+/*Game Modes section*/
+.game-modes {
+    padding: 50px;
+    text-align: center;
+}
+
+.game-mode-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-mode {
+    position: relative;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+}
+
+.game-mode img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.5s, filter 0.5s;
+    border-radius: 15px;
+
+}
+
+.game-mode-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    transition: opacity 0.5s;
+}
+
+.game-mode-overlay h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    opacity: 1;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    transition: top 0.5s;
+    width: 100%; /* Add this line */
+    text-align: center; /* Add this line */
+    font-family: "wigwag-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+}
+
+.game-mode-overlay p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.game-mode:hover .game-mode-overlay h3 {
+    top: 20%;
+}
+
+.game-mode:hover .game-mode-overlay p {
+    opacity: 1;
+}
+
+.game-mode:hover img {
+    /*opacity: 0.5;*/
+    filter:brightness(0.2);
+}
+
 /* Add media queries for mobile */
+
+h2{
+    font-family: "wigwag-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:50px;
+}
 
 @media (max-width: 768px) {
     .logo {
@@ -93,5 +178,12 @@ body::before {
     }
     .coming-soon-btn {
         margin: 30px auto; /* Adjust button margin for mobile */
+    }
+    .game-mode {
+        width: 100%;
+        margin: 20px 0;
+    }
+    h2{
+        font-size:25px;
     }
 }

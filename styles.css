@@ -129,6 +129,7 @@ body::before {
     font-weight: 400;
     font-style: normal;
     font-size:30px;
+    text-shadow: 0px 5px 7px rgba(0, 0, 0, 1);
 }
 
 .game-mode-overlay p {

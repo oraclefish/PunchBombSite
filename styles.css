@@ -81,12 +81,17 @@ body::before {
 
 /*Game Modes section*/
 .game-modes {
-    padding: 0px;
+    /* padding: 0px; */
     text-align: center;
-    margin-left:40px;
-    margin-right:40px;
-    margin-top:50px;
-    margin-bottom:50px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:rgba(255,255,255,0.85);
+    background-image:url(images/PunchThingsBG.png);
+    background-blend-mode:screen;
+    background-position:center;
+    background-size:cover;
 }
 
 .game-mode-container {
@@ -289,7 +294,7 @@ h2{
     display: flex;
     justify-content:center;
     /*align-items: center;*/
-    margin: 30px 60px 0 60px;
+    margin: 30px 85px 0 85px;
     align-items:stretch;
     box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.25);
     overflow:hidden;
@@ -353,6 +358,38 @@ h2{
 
 }
 
+/*Unlock Things Section*/
+
+.collect-things{
+    height:auto;
+    padding:50px;
+    background-color: rgb(156, 209, 218);
+    background-image: url('Images/PunchThingsBG.png');
+    background-blend-mode:screen;
+    background-size: cover;
+    background-position: center;
+}
+.collect-things-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* align-items:stretch; */
+    overflow:hidden;
+    border-radius: 15px;
+}
+.collect-things-fist{
+    width:auto;
+    height:auto;
+}
+.collect-things-fist img{
+    width:250px;
+    height:250px;
+}
+.collect-things-description{
+    width:550px;
+    text-align:center;
+    margin-right:25px;
+}
 
 /* Add media queries for mobile */
 
@@ -394,6 +431,8 @@ h2{
 
     .punch-things-container {
         flex-direction: column;
+        margin-left:40px;
+        margin-right:40px;
     }
 
     .punch-things-screenshot {
@@ -401,6 +440,7 @@ h2{
         margin-bottom: 0px;
         height:200px;
         border-radius: 15px 15px 0 0;
+
     }
 
     .punch-things-description {
@@ -414,6 +454,10 @@ h2{
 
     .punch-things-description p {
         font-size: 16px;
+    }
+    .collect-things-fist img{
+        width:150px;
+        height:150px;
     }
 
 }

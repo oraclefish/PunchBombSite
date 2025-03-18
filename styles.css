@@ -88,7 +88,7 @@ body::before {
     padding-top:50px;
     padding-bottom:60px;
     background-color:rgba(255,255,255,0.85);
-    background-image:url(images/PunchThingsBG.png);
+    background-image:url(Images/PunchThingsBG.png);
     background-blend-mode:screen;
     background-position:center;
     background-size:cover;

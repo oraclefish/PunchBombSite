@@ -103,7 +103,11 @@ body::before {
 .game-mode {
     position: relative;
     margin: 5px;
+    height:300px;
     width: calc(33.33% - 40px);
+    box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.25);
+    overflow:hidden;
+    border-radius:15px;
 }
 
 .game-mode img {
@@ -363,32 +367,114 @@ h2{
 .collect-things{
     height:auto;
     padding:25px;
-    background-color: rgb(156, 209, 218);
+    position:relative;
+    /* background-color: rgb(156, 209, 218);
     background-image: url('Images/PunchThingsBG.png');
     background-blend-mode:screen;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    z-index:1;
 }
 .collect-things-container{
     display: flex;
     justify-content:center;
     align-items: center;
     /* align-items:stretch; */
-    overflow:hidden;
-    border-radius: 15px;
+    overflow:visible;
 }
 .collect-things-fist{
-    width:auto;
-    height:auto;
+    width:300px;
+    height:300px;
+    align-items:center;
+    justify-items:center;
+    overflow:visible;
 }
 .collect-things-fist img{
-    width:250px;
-    height:250px;
+    width:300px;
+    height:300px;
+    align-self:center;
+    justify-self:center;
+    overflow:visible;
 }
 .collect-things-description{
     width:550px;
     text-align:center;
+    /* margin-right:-125px; */
     margin-right:25px;
+    /* background-color:rgba(255,255,255,0.85);
+    box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.25);
+    border-radius:15px; */
+    /* padding:15px 150px 15px 15px; */
+    /* padding:15px; */
+}
+
+/* Leaderboard Section */
+
+.leaderboard {
+    height: 300px;
+    /* background-color:rgba(255,255,255,0.85); */
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    justify-content:center;
+    margin-top:-125px;
+}
+
+.leaderboard-container {
+    display: flex;
+    height:100%;
+    /* padding-left:150px;
+    padding-right:150px; */
+    position:relative;
+    z-index:3;
+    align-items:flex-end;
+    justify-content:center;
+}
+
+.leaderboard-image {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-image:url(Images/Leaderboard.png);
+    background-size:cover;
+}
+
+.leaderboard-image img {
+    width: 500px;
+    height: auto;
+    z-index:12;
+
+}
+
+.leaderboard-description {
+    width: 500px;
+    text-align: center;
+    /* margin-left: 25px; */
+    align-self:center;
+    margin-top:70px;
+    padding:15px;
+    border-radius:15px;
+    /* background-color:rgba(255,255,255,0.85);
+    overflow:hidden;
+    box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+/* .leaderboard-description h2 {
+    font-size: 30px;
+    text-align:left;
+} */
+
+/* .leaderboard-description p {
+    font-size: 18px;
+    text-align:left;
+} */
+
+.endcontent{
+    background-color: rgb(156, 209, 218);
+    background-image: url('Images/PunchThingsBG.png');
+    background-blend-mode:screen;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Add media queries for mobile */
@@ -455,9 +541,52 @@ h2{
     .punch-things-description p {
         font-size: 16px;
     }
+
+    /*Collect Things Section*/
+
+    .collect-things-fist{
+        height:150px;
+    }
     .collect-things-fist img{
         width:150px;
         height:150px;
+    }
+    .collect-things-description p{
+        margin-top:0px;
+        margin-bottom:0px;
+        font-size:15px;
+    }
+    .collect-things-description h2{
+        font-size:20px;
+    }
+
+    /*Leaderboard Section*/
+
+    .leaderboard{
+        margin-top:-40px;
+        height:auto;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .leaderboard-container{
+        margin-top:0;
+        height:auto;
+    }
+
+    .leaderboard-image{
+        height:200px;
+    }
+    .leaderboard-description{
+        margin-top:50px;
+        margin-left:10px;
+        padding:0;
+    }
+    .leaderboard-description h2{
+        font-size:20px;
+    }
+    .leaderboard-description p{
+        font-size:15px;
+        margin-top:0px;
     }
 
 }
